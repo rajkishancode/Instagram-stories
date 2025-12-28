@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram Stories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Instagram</div>
+        <div>
+            <i class="fas fa-plus" style="margin-right: 20px; font-size: 20px;"></i>
+            <i class="fas fa-heart" style="margin-right: 20px; font-size: 20px;"></i>
+            <i class="fas fa-paper-plane" style="font-size: 20px;"></i>
+        </div>
+    </div>
+    
+    <div class="stories-container" id="storiesList">
+        <!-- Stories will be loaded here -->
+    </div>
+    
+    <div class="main-content">
+        <i class="fas fa-camera"></i>
+        <h2>Your Stories</h2>
+        <p>When you share photos or videos, they'll appear here.</p>
+        <p style="margin-top: 20px;">Tap on a story above to view it.</p>
+    </div>
+    
+    <div class="story-viewer" id="storyViewer">
+        <div class="story-progress" id="progressBars">
+            <!-- Progress bars will be added here -->
+        </div>
+        
+        <div class="story-header">
+            <div class="story-user-info">
+                <img class="story-user-avatar" id="currentUserAvatar" src="" alt="">
+                <div>
+                    <div class="story-username-large" id="currentUsername">Username</div>
+                    <div class="story-time" id="currentTime">5h ago</div>
+                </div>
+            </div>
+            <div class="story-close" id="closeStory">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        
+        <div class="story-content">
+            <img class="story-image" id="currentStoryImage" src="" alt="">
+        </div>
+        
+        <div class="story-nav">
+            <div class="nav-left" id="prevStory"></div>
+            <div class="nav-right" id="nextStory"></div>
+        </div>
+        
+        <div class="story-footer">
+            <input type="text" class="story-input" placeholder="Send message">
+            <div>
+                <i class="far fa-heart story-action"></i>
+                <i class="far fa-paper-plane story-action"></i>
+            </div>
+        </div>
+        
+        <div class="loading-indicator" id="loadingIndicator">Loading...</div>
+    </div>
+
+    <!-- Add this script tag to embed the stories data directly -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
